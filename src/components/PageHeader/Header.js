@@ -11,6 +11,7 @@ function Header() {
             <ImageHeader
                 logo={logo}
                 alt="reddit-logo"
+                text="Reddit"
             />
         </header>
     );

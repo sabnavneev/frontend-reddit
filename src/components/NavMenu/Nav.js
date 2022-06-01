@@ -7,10 +7,7 @@ function Nav() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/hotposts">Hottest posts</NavLink>
+                        <NavLink to="/">Hottest posts</NavLink>
                     </li>
                     <li>
                         <NavLink to="/">Reddit</NavLink>
