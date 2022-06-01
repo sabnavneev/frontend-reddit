@@ -1,24 +1,22 @@
-import logo from './assets/logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Hotposts from "./pages/hot/Hotposts";
+import Reddit from "./pages/reddit/Reddit";
+import Memes from "./pages/memes/Memes";
+import Subreddit from "./pages/subreddit/Subreddit";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/hotposts" element={<Hotposts />} />
+        <Route path="/post/:id" element={<Subreddit />} />
+        <Route path="/reddit" element={<Reddit />} />
+        <Route path="/memes" element={<Memes />} />
+      </Routes>
+    </>
   );
 }
 

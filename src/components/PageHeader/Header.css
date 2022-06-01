@@ -1,0 +1,9 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--orange-soda);
+    height: 350px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
