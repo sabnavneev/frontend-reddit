@@ -1,5 +1,15 @@
-a, a:link, a:visited, a:focus, a:hover, a:active{
-    cursor: pointer;
-    text-decoration: none;
-    color: #000;
+.inner-container {
+    display: flex;
+    justify-content: center;
+    flex-basis: 1400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 auto;
+    padding-top: 40px;
+    background-color: var(--snow);
+}
+
+ul {
+    column-count: 3;
+    vertical-align: top;
 }

@@ -4,7 +4,9 @@ import axios from "axios";
 import Header from "../../components/PageHeader/Header";
 import Footer from "../../components/PageFooter/Footer";
 import Main from "../../components/PageMain/Main";
-import Post from "../../components/Post/Post";
+import HotPost from "../../components/Post/HotPost";
+import Nav from "../../components/PageNav/Nav";
+import Logo from '../../assets/logo.png'
 
 function Home() {
     const [posts, setPosts] = useState([]);
@@ -23,18 +25,25 @@ function Home() {
 
     return (
         <>
-            <Header />
+            <Nav />
+            <Header>
+                <img src={Logo} alt="Reddit logo"/>
+                <h1 className="text-align-center">Reddit</h1>
+            </Header>
             <Main>
-                    <h1>Hottest posts</h1>
-                    {posts.map((post) => {
-                            return <Post
-                                title={post.data.title}
-                                id={post.data.subreddit}
-                                prefix={post.data.subreddit_name_prefixed}
-                                comments={post.data.num_comments}
-                                ups={post.data.ups}/>
-                    })
-                    }
+                <div className="inner-container">
+                    <ul>
+                        {posts.map((post) => {
+                                return <HotPost
+                                    title={post.data.title}
+                                    banaan={post.data.subreddit}
+                                    prefix={post.data.subreddit_name_prefixed}
+                                    comments={post.data.num_comments}
+                                    ups={post.data.ups}/>
+                        })
+                        }
+                    </ul>
+                </div>
             </Main>
             <Footer />
         </>

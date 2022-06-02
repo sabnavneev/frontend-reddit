@@ -10,7 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/subreddit/:id" element={<Subreddit />} />
+        <Route path="/subreddit/:banaan" element={<Subreddit />} />
         <Route path="/reddit" element={<Reddit />} />
         <Route path="/memes" element={<Memes />} />
       </Routes>

@@ -1,0 +1,10 @@
+.subreddit-post-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: burlywood;
+}

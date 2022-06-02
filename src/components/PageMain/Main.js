@@ -3,9 +3,9 @@ import './Main.css';
 
 function Main( { children }) {
     return (
-        <main className="main-container">
+        <div className="main-outer-container">
             {children}
-        </main>
+        </div>
     );
 }
 

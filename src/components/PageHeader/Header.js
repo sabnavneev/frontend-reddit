@@ -1,19 +1,15 @@
 import React from 'react';
 import './Header.css';
-import Nav from "../NavMenu/Nav";
-import ImageHeader from "../ImageHeader/ImageHeader";
-import logo from "../../assets/logo.png";
 
-function Header() {
+function Header({ children }) {
     return (
-        <header className="header-container">
-            <Nav />
-            <ImageHeader
-                logo={logo}
-                alt="reddit-logo"
-                text="Reddit"
-            />
-        </header>
+        <div className="header-outer-container">
+            <div className="header-inner-container">
+                <div>
+                    {children}
+                </div>
+            </div>
+        </div>
     );
 }
 
