@@ -1,10 +1,10 @@
-.header-outer-container {
+.top-outer-container {
     display: flex;
     width: 100%;
-    background-color: var(--orange-soda);
+    background-color: var(--snow);
 }
 
-.header-inner-container {
+.top-inner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,13 +13,8 @@
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 auto;
-    padding: 50px 0;
-    background-color: var(--orange-soda);
-}
-
-img {
-    width: 250px;
-    height:250px;
+    padding: 50px 0 10px 0;
+    background-color: var(--snow);
 }
 
 .text-align-center {

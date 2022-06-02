@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import './Home.css';
 import axios from "axios";
+import Nav from "../../components/PageNav/Nav";
+import Top from "../../components/PageTop/Top";
 import Header from "../../components/PageHeader/Header";
-import Footer from "../../components/PageFooter/Footer";
 import Main from "../../components/PageMain/Main";
 import HotPost from "../../components/Post/HotPost";
-import Nav from "../../components/PageNav/Nav";
+import Footer from "../../components/PageFooter/Footer";
 import Logo from '../../assets/logo.png'
+
 
 function Home() {
     const [posts, setPosts] = useState([]);
@@ -30,6 +32,7 @@ function Home() {
                 <img src={Logo} alt="Reddit logo"/>
                 <h1 className="text-align-center">Reddit</h1>
             </Header>
+            <Top />
             <Main>
                 <div className="inner-container">
                     <ul>

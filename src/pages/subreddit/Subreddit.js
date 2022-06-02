@@ -19,9 +19,9 @@ function Subreddit() {
         async function fetchData(){
             try {
                 /*const response = await axios.get(`https://www.reddit.com/r/technology/about.json`);*/
-                const response = await axios.get(`https://www.reddit.com/r/${banaan}/about.json`);
+                 const response = await axios.get(`https://www.reddit.com/r/${banaan}/about.json`);
+                 console.log(response.data.data)
                 setPosts(response.data.data)
-                console.log(posts)
             } catch (e) {
                 console.error(e);
             }
@@ -33,12 +33,12 @@ function Subreddit() {
         <>
             <Nav />
             <Header>
-                <h1 className="text-align-center">{posts.title}</h1>
+                <h1 className="text-align-center">{posts.display_name_prefixed}</h1>
                 <p className="text-align-center">Subreddit specifications</p>
             </Header>
             <Main>
                 <SubredditPost
-                    title={posts.title}
+                    title={posts.display_name}
                     description={posts.public_description}
                     subscribers={posts.subscribers}
                 />

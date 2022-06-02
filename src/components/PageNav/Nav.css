@@ -1,18 +1,18 @@
 .nav-outer-container {
     display: flex;
-    background-color: var(--orange-soda);
     width: 100%;
+    background-color: var(--orange-soda);
 }
 
 .nav-inner-container {
     display: flex;
     justify-content: flex-end;
-    flex-basis: 1400px;
+    flex-basis: 1200px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 auto;
     padding: 20px 0;
-    background-color: blue;
+    background-color: var(--orange-soda);
 }
 
 .nav-bar {
@@ -22,7 +22,8 @@
     flex-basis: 400px;
     list-style-type: none;
     font-size: 18px;
-    background-color: purple;
+    font-weight: 700;
+    background-color: var(--orange-soda);
 }
 
 a {

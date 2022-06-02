@@ -1,14 +1,14 @@
 
 .main-outer-container {
     display: flex;
-    background-color: yellow;
     width: 100%;
     height: 100vh;
+    background-color: var(--snow);
 }
 
 .main-inner-container {
     display: flex;
-    flex-basis: 1400px;
+    flex-basis: 1200px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 auto;

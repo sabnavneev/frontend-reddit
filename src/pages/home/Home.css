@@ -1,7 +1,7 @@
 .inner-container {
     display: flex;
-    justify-content: center;
-    flex-basis: 1400px;
+    justify-content: space-evenly;
+    flex-basis: 1200px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 auto;
@@ -11,5 +11,5 @@
 
 ul {
     column-count: 3;
-    vertical-align: top;
+    column-gap: 15px;
 }

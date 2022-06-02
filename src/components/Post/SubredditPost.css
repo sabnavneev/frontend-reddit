@@ -1,10 +1,19 @@
 .subreddit-post-container {
     display: flex;
     flex-direction: column;
-    flex-basis: 1400px;
+    align-items: flex-start;
+    flex-basis: 1200px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 auto;
-    padding: 20px 0;
-    background-color: burlywood;
+    padding: 80px 0;
+    background-color: var(--snow);
+}
+
+.padding-bottom-10px {
+    padding-bottom: 10px;
+}
+
+.padding-bottom-20px {
+    padding-bottom: 20px;
 }
