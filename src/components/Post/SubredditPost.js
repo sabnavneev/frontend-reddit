@@ -1,9 +1,9 @@
 import React from 'react';
 import './SubredditPost.css';
-import {Link, useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 
-function SubredditPost({title, description, subscribers}) {
+function SubredditPost({title, url, description, subscribers}) {
    const history = useNavigate ();
 
    function handleClick() {

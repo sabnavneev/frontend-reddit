@@ -9,7 +9,7 @@
     flex-grow: 0;
     flex-shrink: 1;
     box-shadow: 10px 10px 5px #EFF0E0;
-    background-color: brown;
+    background-color: var(--white);
 }
 
 .title {

@@ -11,10 +11,10 @@ function Nav() {
                             <NavLink to="/" className="color-white">Hottest posts</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/" className="color-white">Reddit</NavLink>
+                            <a href="https://www.reddit.com" className="color-white" target="_blank" rel="noreferrer">Reddit</a>
                         </li>
                         <li>
-                            <NavLink to="/" className="color-white">Memes</NavLink>
+                            <a href="https://www.reddit.com/t/memes/" className="color-white" target="_blank" rel="noreferrer">Memes</a>
                         </li>
                     </ul>
                 </div>

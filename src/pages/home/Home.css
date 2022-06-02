@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-basis: 1200px;
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 1;
     margin: 0 auto;
     padding-top: 40px;

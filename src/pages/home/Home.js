@@ -30,7 +30,7 @@ function Home() {
             <Nav />
             <Header>
                 <img src={Logo} alt="Reddit logo"/>
-                <h1 className="text-align-center">Reddit</h1>
+                <h1 className="text-align-center font-size-50">Reddit</h1>
             </Header>
             <Top />
             <Main>
@@ -40,6 +40,7 @@ function Home() {
                                 return <HotPost
                                     title={post.data.title}
                                     banaan={post.data.subreddit}
+                                    url={post.data.url}
                                     prefix={post.data.subreddit_name_prefixed}
                                     comments={post.data.num_comments}
                                     ups={post.data.ups}/>
